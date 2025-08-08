@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+header {
+    background-color: #FAFAFA;
+    padding:0 0 0 50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 100;
+}
+
+header>nav{
+    margin: 0 95px 0 0;
+}
+
+header>nav>a{
+    text-decoration: none;
+    color: black;
+    padding: 0 20px;
+}
+
+main{
+    margin: 76px 0 0 0;
+    padding: 20px 0 0 0;
+    background-color: #F5F5F5;
+}
+
+main>img{
+    position: fixed;
+    left:156px;
+    top:0;
+}
+
+.EraName{
+    margin:20px 60px;
+    vertical-align: middle;
+    display:flex;
+    align-items: center;
+}
+.EraName>img{
+    position: absolute;
+}
+.FondoAño{
+    left:95px;
+}
+.Sombra{
+    left:158px;
+    z-index: 10;
+}
+.EraName>p, .EraName>h1{
+    z-index: 20;
+}
+.EraName>p{
+    color: #FFFFFF;
+    position: relative;
+    margin: 0 70px 0 40px;
+    padding: 0 10px;
+}
+.EraName>h1{
+    background-color: #F52921;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding:20px 580px 25px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    z-index: 2;
+}
+
+.Century{
+    display:flex;
+    align-items: start;
+    position: relative;
+    margin: 10px 30px 10px 150px;
+    z-index: 10;
+}
+.Century>img{
+    margin:10px 10px
+}
+
+.Century>p{
+    position: absolute;
+    left:-83px;
+    top:10px;
+}
+.Mathematicians{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.Mathematician{
+    margin:10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 0 0 0 30px;
+    width: 218px;
+    height: 60px;
+    position: relative;
+}
+.Mathematician>h2{
+    font-size: 12px;
+}
+.Mathematician>p{
+    font-size: 12px;
+}
+.Mathematician>img{
+    position: absolute;
+    
+}
