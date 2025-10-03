@@ -101,15 +101,16 @@ main>img{
     border-radius: 10px;
     padding: 0 0 0 30px;
     width: 218px;
-    height: 60px;
+    height: auto;
     position: relative;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    z-index: 9999;
 }
 .Mathematician>h2{
     margin: 15px 5px 0 30px;
 }
 .Mathematician>p{
-    margin: 1px 5px 5px 30px;
+    margin: 1px 5px 15px 30px;
 }
 .Mathematician>p, .Mathematician>h2{
     font-size: 12px;
@@ -125,10 +126,11 @@ main>img{
 .Mathematician:hover{
     transform: scale(1.3);
     transition: 0.3s;
+    z-index:9999;
 }
 
 .Mathematician:hover::before{
-    Content:"SUMMARY: Thales was the first known Greek philosopher, scientist and mathematician. He is credited with five theorems of elementary geometry.";
+    Content:attr(data-info);
     background-color: #FFFFFF;
     border-radius: 10px;
     padding: 10px;
@@ -138,5 +140,111 @@ main>img{
     left:-178px;
     top:-50px;
     font-size: 12px;
-    z-index:200;
+    z-index:9999;
+}
+
+/* smartphones en paisaje */
+@media (max-width: 767px) {
+	
+}
+
+/* smartphones en vertical*/
+@media (max-width: 480px) {
+	main>img{
+        left:70px; 
+    }
+
+    header {
+        padding:4px 10px 4px 10px;
+    }
+
+    header>nav{
+        width: calc(100vw - 80px);
+        padding: 0 20px 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    header>img{
+        height: 60px;
+    }
+
+    header>nav>a{
+        text-decoration: none;
+        color: black;
+        padding: 1px 10px;
+        font-size: 13px;
+
+    }
+    main{
+        margin: 68px 0 0 0;
+        padding: 12px 0 0 0;
+    }
+
+    .EraName{
+        margin:20px 20px 20px 20px;
+        top:68px;
+    }
+    .FondoAño{
+        left:-3px;
+        width: 90px;;
+    }
+    .Sombra{
+        left:52px;
+    }
+
+    .EraName>p{
+        margin: 0 60px 0 5px;
+        font-size: 14px;
+    }
+    .EraName>h1{
+        padding:10px;
+        font-size: 18px;
+        width: calc(100vw - 200px);
+    }
+
+    .Century{
+        margin: 10px 30px 10px 66px;
+    }
+
+    .Century>img{
+        margin:7px 7px;
+    }
+
+    .Century>p{
+        left:-50px;
+        top:5px;
+        font-size: 13px;
+    }
+
+    .Mathematician{
+        margin:7px;
+        width: calc(100vw - 185px);;
+    }
+    
+    .Mathematician:hover{
+        transform: scale(1.1);
+    }
+
+    .Mathematician:hover::before{
+        padding: 7px;
+        width: 80px;
+        left:-100px;
+        top:-30px;
+    }
+}
+
+/* tablets in vertical */
+@media (min-width: 768px) and (max-width: 993px) {
+	
+
+}
+/* tablets in landscape */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+/* laptops */
+@media (min-width: 1200px) {
+	
 }
